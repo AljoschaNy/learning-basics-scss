@@ -2,7 +2,77 @@
   font-family: "Pacifico";
   src: url(../assets/fonts/Pacifico-Regular.ttf);
 }
+@font-face {
+  font-family: "Fredoka";
+  src: url(../assets/fonts/Fredoka-VariableFont_wdth\,wght.ttf);
+}
+body {
+  background-color: rgb(255, 157, 171);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Fredoka";
+  color: white;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px;
+}
+
 h1 {
-  font-size: 48px;
+  font-size: 2rem;
   font-family: "Pacifico";
+  color: #4b0a1a;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-left: 32px;
+}
+
+.slogan {
+  position: absolute;
+  top: 20vh;
+  left: 80px;
+}
+.slogan p {
+  font-size: 2.5rem;
+}
+.slogan .slogan-highlight {
+  color: #4b0a1a;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.regular-btn {
+  background-color: white;
+  min-width: 150px;
+  padding: 1.5em 2em;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+.shake-image {
+  width: 50vw;
+  position: absolute;
+  bottom: -100px;
+  right: -50px;
+  z-index: -10;
+}
+
+.circle {
+  position: absolute;
+  bottom: -100px;
+  right: -50px;
+  z-index: -10;
+  width: 55vw;
+  height: 55vw;
+  border-radius: 50%;
+  background-color: rgb(204, 119, 133);
 }/*# sourceMappingURL=main.css.map */

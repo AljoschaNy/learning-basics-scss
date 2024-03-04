@@ -3,7 +3,92 @@
     src: url(../assets/fonts/Pacifico-Regular.ttf);
 }
 
-h1 {
-  font-size: 48px;
-  font-family: "Pacifico";
+@font-face {
+    font-family: "Fredoka";
+    src: url(../assets/fonts/Fredoka-VariableFont_wdth\,wght.ttf);
 }
+
+$main-color: #4b0a1a;
+
+@mixin rightBottomCorner() {
+    position: absolute;
+    bottom: -100px;
+    right: -50px;
+    z-index: -10;
+}
+
+@mixin circle($width, $bgColor: rgb(204, 119, 133)) {
+    width: $width;
+    height: $width;
+    border-radius: 50%;
+    background-color: $bgColor;
+}
+
+body {
+    background-color: rgb(255, 157, 171);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Fredoka";
+    color: white;
+    overflow: hidden;
+}
+
+// header styles
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Pacifico";
+  color: $main-color;
+  text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-left: 32px;
+}
+
+// slogan
+.slogan {
+    position: absolute;
+    top: 20vh;
+    left: 80px;
+
+    p {
+        font-size: 2.5rem;
+    }
+
+    .slogan-highlight {
+        color: $main-color;
+        font-size: 2em;
+        font-weight: 700;
+    }
+}
+
+// button styles
+.regular-btn {
+    background-color: white;
+    min-width: 150px;
+    padding: 1.5em 2em;
+    margin-right: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+// bg illustration
+.shake-image {
+    width: 50vw;
+    @include rightBottomCorner();    
+}
+
+.circle {
+    @include rightBottomCorner();
+    @include circle(55vw);
+}
+
