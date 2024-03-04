@@ -1,0 +1,13 @@
+@mixin rightBottomCorner() {
+  position: absolute;
+  bottom: -100px;
+  right: -50px;
+  z-index: -10;
+}
+
+@mixin circle($width, $bgColor: rgb(204, 119, 133)) {
+  width: $width;
+  height: $width;
+  border-radius: 50%;
+  background-color: $bgColor;
+}
